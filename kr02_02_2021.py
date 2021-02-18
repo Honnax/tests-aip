@@ -8,17 +8,6 @@ def task_1(two_dim_words):
 
     return sorted_words
 
-
-def task_3(numbers):
-    """
-        Здесь должен быть ваш код.
-        Переменная numbers - ваша строка чисел.
-        Финальное значение должно быть помещено в переменную dict_min.
-        """
-
-    return dict_min
-
-
 def task_4_1(words):
     """
         Здесь должен быть ваш код.
@@ -55,6 +44,16 @@ def task_5(lst1, lst2):
         Переменные lst1 и lst2 - два данных списка.
         Финальное значение должно быть помещено в переменную diff.
         """
+list1 = [2, 5, 8, 7, 6, 1, 2]
+list2 = [7, 3, 1, 2, 6, 9, 4]
+set1 = set(list1)
+set2 = set(list2)
+set3 = set(list1)
+set3 &= set2
+set1 = set1.difference(set3)
+list3 = list(set1)
+list3.sort()
+print(list3)
 
     return diff
 
@@ -65,6 +64,13 @@ def task_6(lst):
         Переменная lst - ваш список.
         Финальное значение должно быть помещено в переменную res.
         """
+list1 = [1, 43, 5, 34, 3]
+set1 = set(list1)
+list2 = list(set1)
+list2.sort(reverse=True)
+tuple1 = tuple(list2)
+print(tuple1)
+
 
     return res
 
